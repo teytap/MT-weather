@@ -60,6 +60,7 @@ button:hover {
     rgb(255, 159, 122) 82.6%,
     rgb(255, 109, 58) 100.2%
   );
+  background-color: white;
 
   font-family: "Poppins", sans-serif;
   box-shadow: 5px 5px 5px grey;

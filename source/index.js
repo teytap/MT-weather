@@ -37,6 +37,7 @@ let celcius = document.querySelector("#celcius");
 let newCityInput;
 let fahrenheit = document.querySelector("#fahrenheit");
 let changeDegree = document.querySelector(".changeDegree");
+let windUnit = document.querySelector(".wind-unit");
 // let descriptionMapping = {
 //   "clear sky": "Açık",
 //   "few clouds": "Az Bulutlu",
@@ -61,18 +62,20 @@ let changeDegree = document.querySelector(".changeDegree");
 
 function cel(event) {
   event.preventDefault();
-  changeDegree.innerHTML = Math.round(celciusTemp);
-  //unit = "metric";
-  // newCityInput = document.querySelector("#newCity").value;
-  // newCityInput ? searchCity(newCityInput) : searchCity("Ankara");
+  //changeDegree.innerHTML = Math.round(celciusTemp);
+  unit = "metric";
+  newCityInput = document.querySelector("#newCity").value;
+  newCityInput ? searchCity(newCityInput) : searchCity("Ankara");
+  windUnit.innerHTML = "km/h";
 }
 function fah(event) {
   event.preventDefault();
-  let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
-  changeDegree.innerHTML = Math.round(fahrenheitTemp);
-  // unit = "imperial";
-  // newCityInput = document.querySelector("#newCity").value;
-  // newCityInput ? searchCity(newCityInput) : searchCity("Ankara");
+  //let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
+  //changeDegree.innerHTML = Math.round(fahrenheitTemp);
+  unit = "imperial";
+  newCityInput = document.querySelector("#newCity").value;
+  newCityInput ? searchCity(newCityInput) : searchCity("Ankara");
+  windUnit.innerHTML = "mph";
 }
 celcius.addEventListener("click", cel);
 fahrenheit.addEventListener("click", fah);
