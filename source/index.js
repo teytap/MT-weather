@@ -95,7 +95,7 @@ function newCityForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-            <div class="col-2 days-forecast">
+            <div class="col-sm-2 days-forecast d-flex d-sm-block justify-content-around align-items-center">
               <div class="weather-forecast-date">${formatDay(
                 forecastDay.dt
               )}</div>
