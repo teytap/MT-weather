@@ -9,7 +9,7 @@ h1 {
   padding-top: 20px;
   text-align: left;
   font-size: 68px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h5 {
@@ -72,7 +72,7 @@ button:hover {
   margin-top: 0;
   font-size: 80px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 900;
 }
 .degreeToday {
   font-weight: bold;
